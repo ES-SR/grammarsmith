@@ -1,0 +1,14 @@
+# On-disk data store — the gold parse, templates, caches. Regenerable / accumulated locally.
+data/
+*.gold.json
+
+# A project's own example corpus data is local; the skeleton/tools are tracked.
+# (Uncomment per project as needed.)
+# Examples/**/*.hist
+
+# Python
+__pycache__/
+*.pyc
+
+# Editor backups
+*~
