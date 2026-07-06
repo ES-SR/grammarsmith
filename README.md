@@ -1,4 +1,4 @@
-# grammarsmith-ts
+# grammarsmith
 
 Derive a **tree-sitter grammar** for a language from two inputs: its **documentation** and a **corpus
 of example code**. Point it at the two trees, turn the crank, get a grammar + scanner. Language-agnostic;
