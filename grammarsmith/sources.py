@@ -58,6 +58,7 @@ def _defaults():
         'examples_dir': os.path.join(r, 'Examples'),
         'docs_dir': os.path.join(r, 'Docs'),
         'data_dir': os.path.join(r, 'data'),        # on-disk store for the gold, templates, caches
+        'models': {},                               # [models] table: tier -> provider spec (see models.py)
     }
 
 
@@ -117,6 +118,7 @@ def config(**overrides):
 def examples_dir(): return config()['examples_dir']
 def docs_dir():     return config()['docs_dir']
 def data_dir():     return config()['data_dir']
+def models_config(): return config().get('models') or {}
 
 
 # ---------------------------------------------------------------------------------------------------
